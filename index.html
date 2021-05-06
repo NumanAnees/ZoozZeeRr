@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="jarallax.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" type="image/png" href="images/favicon2.png" />
+  <title>ZoOzZeRr - software company</title>
+</head>
+
+<body>
+  <header>
+    <a href="#" class="Logo">ZoOzZeRr</a>
+    <ul>
+      <li><a href="#g1">About Us</a></li>
+      <li><a href="#g2">Our innovations</a></li>
+      <li><a href="#g3">Web development</a></li>
+      <li><a href="#g4">App development</a></li>
+      <li><a href="#g5">Contact Us</a></li>
+    </ul>
+  </header>
+  <section id="g1">
+    <div class="box hero">
+      <h2 data-text="ABOUT US" data-jarallax-element="0 -200">About US</h2>
+      <div class="container">
+        <div class="imgBx jarallax">
+          <img src="images/image 1.jpg" / class="jarallax-img">
+        </div>
+        <div class="content" data-jarallax-element="-200 0">
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Doloribus necessitatibus consequatur, veritatis commodi vitae iste
+            magnam aperiam non. Cumque iure, architecto vitae reiciendis enim
+            delectus repellendus! Quae doloribus dolor est Lorem ipsum dolor
+            sit amet consectetur
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="g2">
+    <div class="box">
+      <h2 data-text=" OUR INNOVATIONS" data-jarallax-element="0 200">
+        Our innovations
+      </h2>
+      <div class="container">
+        <div class="imgBx jarallax">
+          <img src="images/image2.jpg" / class="jarallax-img">
+        </div>
+        <div class="content" data-jarallax-element="-200 0">
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Doloribus necessitatibus consequatur, veritatis commodi vitae iste
+            magnam aperiam non. Cumque iure, architecto vitae reiciendis enim
+            delectus repellendus! Quae doloribus dolor est
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="g3">
+    <div class="box">
+      <h2 data-text="WEB DEVELOPMENT" data-jarallax-element="0 -200">
+        Website development
+      </h2>
+      <div class="container">
+        <div class="imgBx jarallax">
+          <img src="images/image3.jpg" / class="jarallax-img">
+        </div>
+        <div class="content" data-jarallax-element="-200 0">
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Doloribus necessitatibus consequatur, veritatis commodi vitae iste
+            magnam aperiam non. Cumque iure, architecto vitae reiciendis enim
+            delectus repellendus! Quae doloribus dolor est Lorem ipsum dolor
+            sit amet consectetur
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="g4">
+    <div class="box">
+      <h2 data-text="APP DEVELOPMENT" data-jarallax-element="0 200">
+        Application Development
+      </h2>
+      <div class="container">
+        <div class="imgBx jarallax">
+          <img src="images/image4.jpg" / class="jarallax-img">
+        </div>
+        <div class="content" data-jarallax-element="-200 0">
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Doloribus necessitatibus consequatur, veritatis commodi vitae iste
+            magnam aperiam non. Cumque iure, architecto vitae reiciendis enim
+            delectus repellendus!
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- footer -->
+  <footer id="g5">
+    <div class="footer">
+      <img src="images/warning.jpg" alt="warning" style="height: 140px; width: 230px; margin-top: 30px" />
+      <p>OH NO!</p>
+      <p>SOMETHING WRONG</p>
+      <p>WITH THE</p>
+      <p>CONTACT PAGE</p>
+    </div>
+    <div class="button">
+      <a href="https://apps.apple.com/us/developer/zoozzerr/id1425458492" target="_blank">
+        <h2 data-text="APP DEVELOPMENT">Contact Us</h2>
+      </a>
+    </div>
+  </footer>
+  <script src="jarallax.js"></script>
+  <script src="jarallax-element.js"></script>
+  <script type="text/javascript">
+    jarallax(document.querySelectorAll(".jarallax"), {
+      speed: 0.5,
+      disableParallax: /iPad|iPhone|iPod|Android/,
+      disableVideo: /iPad|iPhone|iPod|Android/,
+    });
+    window.addEventListener("scroll", function () {
+      var header = document.querySelector("header");
+      header.classList.toggle("sticky", window.scrollY > 0);
+    });
+  </script>
+</body>
+
+</html>
